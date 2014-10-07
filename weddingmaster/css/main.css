@@ -89,16 +89,8 @@ body {
 }
 
 #gmap iframe {
-    width: 93%;
+    width: 100%;
     height: 200px;
-
-    border: 10px solid #090909;
-
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    border-radius: 8px;
 }
 
 #gmap small a,
@@ -114,6 +106,31 @@ body {
     text-decoration: underline;
     outline: none;
 }
+
+
+
+/* =============================================================================
+   YOUTUBE
+   ========================================================================== */
+.youtube-container {
+    position: relative;
+    padding-bottom: 55%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.youtube-container iframe,
+.youtube-container object,
+.youtube-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 
 /* ===================
     Theme
@@ -138,38 +155,31 @@ body {
 .title {
     color: black;
 }
+
 #introtext {
-    display: block;
-    padding: 10px 0 10px 0;
-    margin-bottom: 300px;
-    background: black;
-
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -webkit-border-radius: 8px;
-    border-radius: 8px;
-
-    /* Fallback for web browsers that doesn't support RGBa */
-    background: rgb(0, 0, 0);
-    /* RGBa with 0.7 opacity */
-    background: rgba(0, 0, 0, 0.4);
-    /* For IE 5.5 - 7*/
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000, endColorstr=#B2000000);
-    /* For IE 8*/
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2000000, endColorstr=#B2000000)";
+    text-align: center;
 }
 
 #introtext .names {
-    font-family: "EdwardianScrAltITCTT", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 5em;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 2em;
     line-height: 100%;
+    margin-top: 10px;
 }
 #introtext .date {
     margin-top: 10px;
     font-family: "futura_ltbook", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
 }
+
+#introtext img {
+    width: 50%;
+}
+
+.chateauheralec {
+    width: 100%;
+}
+
 
 /* ==============
     MOBILE: Menu
@@ -227,7 +237,7 @@ nav ul li a::-moz-focus-inner {border:0;}
 }
 .main header {
     float: left;
-    width: 80%;
+    width: 90%;
 }
 
 /* ==========================================================================
@@ -345,23 +355,6 @@ section h2 {
         -moz-animation:thedrop 1s 1;
         -webkit-animation:thedrop 1s 1;
     }
-
-    #introtext {
-        padding: 30px 0 30px 0;
-    }
-
-    #introtext .head-names {
-        font-size: 7em;
-    }
-    #introtext .amp {
-        position: relative;
-        top: 29px;
-        font-size: 0.9em;
-        margin-left: -20px;
-    }
-    #introtext .head-brad {
-        font-size: 3em;
-    }
     #introtext .date {
         font-size: 1.1em;
         margin-top: 15px;
@@ -406,7 +399,6 @@ section h2 {
     .main header {
         margin-top: 10%;
         float: left;
-        width: 40%;
         min-width: 320px;
     }
 
@@ -462,15 +454,8 @@ section h2 {
    ============ */
 
     #introtext .names {
-        font-size: 9em;
+        font-size: 2.5em;
    }
-    #introtext .amp {
-        top: 0;
-        font-size: 1em;
-    }
-    #introtext .head-brad {
-        font-size: 4em;
-    }
     #introtext .date {
         font-size: 2em;
         margin-top: 15px;
@@ -485,7 +470,6 @@ section h2 {
         margin-top: 10%;
         margin-bottom: 30%;
         float: left;
-        width: 100%;
     }
 
     nav a {
@@ -538,12 +522,11 @@ section h2 {
     }
 
     #introtext .names {
-        font-size: 11em;
+        font-size: 2.5em;
     }
     #introtext .date {
-
-        font-size: 2.5em;
-        margin-top: 15px;
+        font-size: 1em;
+        margin-top: 25px;
         margin-bottom: 20px;
     }
 
@@ -551,7 +534,6 @@ section h2 {
         margin-top: 4%;
         margin-bottom: 30%;
         float: left;
-        width: 100%;
     }
 
 
