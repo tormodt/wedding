@@ -180,6 +180,15 @@ body {
     width: 100%;
 }
 
+.address,
+.apps {
+    text-align: center;
+}
+
+.apps a {
+    margin: 25px;
+}
+
 
 /* ==============
     MOBILE: Menu
