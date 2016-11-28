@@ -108,30 +108,6 @@ body {
 }
 
 
-
-/* =============================================================================
-   YOUTUBE
-   ========================================================================== */
-.youtube-container {
-    position: relative;
-    padding-bottom: 55%;
-    padding-top: 30px;
-    height: 0;
-    overflow: hidden;
-}
-
-.youtube-container iframe,
-.youtube-container object,
-.youtube-container embed {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-
 /* ===================
     Theme
    =================== */
@@ -176,7 +152,7 @@ body {
     width: 50%;
 }
 
-.chateauheralec {
+.church {
     width: 100%;
 }
 
@@ -187,6 +163,14 @@ body {
 
 .apps a {
     margin: 25px;
+}
+
+.inline {
+    display: inline;
+}
+
+.floatRight {
+    float: right;
 }
 
 
