@@ -272,7 +272,7 @@ body {
     margin: auto;
     min-width: 50%;
     min-height: 50%;
-    transform: rotate(180deg);
+    /*transform: rotate(180deg);*/
 }
 
 #bg-container {
