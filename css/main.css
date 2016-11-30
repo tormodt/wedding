@@ -113,7 +113,8 @@ body {
 
 .header-container {
     position: absolute;
-    bottom: 450px;
+    top: 250px;
+    bottom: auto;
     width: 100%;
     z-index: 10;
     /* Fallback for web browsers that doesn't support RGBa */
@@ -189,8 +190,8 @@ nav ul {
 
 nav a {
     display: block;
-    margin-bottom: 10px;
-    padding: 5px 0;
+    margin-bottom: 4px;
+    padding: 4px 0;
     text-align: center;
     text-decoration: none;
     font-weight: bold;
@@ -333,6 +334,12 @@ section h2 {
    Media Queries
    ========================================================================== */
 
+@media only screen and (max-width: 480px) {
+    .monogram {
+        margin-top: 0;
+    }
+}
+
 @media only screen and (min-width: 480px) {
 
     /* ====================
@@ -345,6 +352,7 @@ section h2 {
     /** get the transparent bar on the bottom **/
     .header-container {
         position: absolute;
+        top: auto;
         bottom: 300px;
         width: 100%;
         line-height: 12px;
@@ -493,7 +501,7 @@ section h2 {
 @media only screen and (min-width: 900px) {
 
     .header-container {
-        bottom: 250px;
+        bottom: 230px;
     }
 
     section h1,
@@ -531,7 +539,7 @@ section h2 {
        =============== */
 
     .header-container {
-        bottom: 200px;
+        bottom: 180px;
     }
 
     nav a {
