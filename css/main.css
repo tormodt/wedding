@@ -338,6 +338,16 @@ section h2 {
     .monogram {
         margin-top: 0;
     }
+
+    .first {
+        margin-top: 250px;
+    }
+
+    .ring {
+        clear: both;
+        float: none;
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 480px) {
