@@ -258,10 +258,10 @@ body {
 
 #bg-image {
     position: fixed;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
+    bottom: 0;
+    right: 0;
+    width: 125%;
+    height: 125%;
 }
 
 #bg-image img {
@@ -336,6 +336,7 @@ img.guest {
 }
 
 div.guest {
+    margin-top: 72px;
     display: inline-block;
 }
 
@@ -549,6 +550,17 @@ div.guest {
         padding: 0 20px;
     }
 
+}
+
+@media only screen and (max-width: 900px) {
+    img.guest {
+        margin-bottom: 0;
+        margin-top: 32px;
+    }
+
+    div.guest {
+        margin-top: 0;
+    }
 }
 
 @media only screen and (min-width: 1140px) {
